@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Confirm Box</title>
+<script type="text/javascript">
+	function showAlert(){
+		var r = confirm("this is an confirm dialogue box example!");
+		if(r==true){
+			 document.write("Dijo OK")
+		 }
+		 else{
+			 document.write("Dijo Cancel")
+		 }
+	}
+
+</script>
+</head>
+<body>
+	<p>Confirm box demo example</p>
+	<input type="button" onclick="showAlert();" value="Call JavaScript" />
+
+</body>
+</html>

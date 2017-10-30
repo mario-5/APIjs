@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>On Submit Events</title>
+<script type="text/javascript">
+	function validation(){
+		if(document.form1.textbox1.value !=""){
+			alert('Validation Passed');
+			return true;
+		}
+		else{
+			alert('Text Box field cannot be empty');
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+<form name="form1"
+method ="get" action="onClickEvent.html"
+onsubmit="return validation()">
+	<input type="text"
+	name="textbox1"/>
+	<input type ="submit" value = "Submit"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Variable Scope</title>
+</head>
+<script type ="text/javascript">
+	var demoVar = "global scope"; //A Global Variable
+	function checkVariableScope(){
+		var demoVar = "local scope"; 
+		// A Local Variable
+		document.write(demoVar);
+	}
+	
+
+</script>
+
+<body onload = checkVariableScope();>
+
+</body>
+</html>
